@@ -57,7 +57,7 @@
       height: 100%;
       padding: 20px;
       display: grid;
-      grid-template-rows: 285px 550px 700px minmax(0, 1fr) 45px;
+      grid-template-rows: 285px 610px 540px minmax(0, 1fr) 45px;
       gap: 15px;
     }
 
@@ -391,15 +391,15 @@
     }
 
     .bandGrid.twoRows .fact {
-      padding: 4px 6px;
-      grid-template-columns: 92px minmax(0, 1fr);
-      gap: 6px;
-      font-size: 11px;
-      line-height: 1.04;
+      padding: 5px 7px;
+      grid-template-columns: 115px minmax(0, 1fr);
+      gap: 7px;
+      font-size: 15px;
+      line-height: 1.08;
     }
 
     .bandGrid.twoRows .fact strong {
-      font-size: 9px;
+      font-size: 13px;
     }
 
     .bandCard.finished {
@@ -462,15 +462,15 @@
     }
 
     .bandGrid.threeRows .fact {
-      padding: 3px 5px;
-      grid-template-columns: 75px minmax(0, 1fr);
-      gap: 4px;
-      font-size: 9px;
-      line-height: 1.02;
+      padding: 4px 6px;
+      grid-template-columns: 98px minmax(0, 1fr);
+      gap: 5px;
+      font-size: 13px;
+      line-height: 1.06;
     }
 
     .bandGrid.threeRows .fact strong {
-      font-size: 8px;
+      font-size: 12px;
     }
 
     .bandCard {
@@ -558,20 +558,20 @@
 
     .fact {
       min-width: 0;
-      padding: 6px 8px;
+      padding: 7px 9px;
       display: grid;
-      grid-template-columns: 132px minmax(0, 1fr);
-      gap: 10px;
+      grid-template-columns: 155px minmax(0, 1fr);
+      gap: 11px;
       border-left: 5px solid var(--orange);
       border-radius: 7px;
       background: var(--paper);
-      font-size: 16px;
-      line-height: 1.1;
+      font-size: 20px;
+      line-height: 1.14;
       overflow-wrap: anywhere;
     }
 
     .fact strong {
-      font-size: 13px;
+      font-size: 17px;
       line-height: 1.05;
       text-transform: uppercase;
     }
@@ -579,109 +579,48 @@
     /* CREW PLAN */
     .crewGroups {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 11px;
+      grid-template-columns: 1fr;
+      gap: 9px;
       align-content: start;
       transform-origin: top left;
     }
 
     .crewGroups.compact {
-      gap: 8px;
-    }
-
-    .crewGroups.compact .crewTimeGroup {
-      padding: 7px;
-      gap: 6px;
-    }
-
-    .crewGroups.compact .crewGroupHeader {
-      padding: 6px 9px;
-    }
-
-    .crewGroups.compact .crewGroupTime {
-      font-size: 22px;
-    }
-
-    .crewGroups.compact .crewPerson {
-      min-height: 57px;
-      padding: 6px 8px;
-      gap: 3px 6px;
-    }
-
-    .crewGroups.compact .crewPersonName {
-      font-size: 23px;
-    }
-
-    .crewGroups.compact .crewPersonShift {
-      font-size: 16px;
+      gap: 7px;
     }
 
     .crewGroups.veryCompact {
-      gap: 6px;
-    }
-
-    .crewGroups.veryCompact .crewTimeGroup {
-      padding: 5px;
-      gap: 4px;
-    }
-
-    .crewGroups.veryCompact .crewGroupHeader {
-      padding: 5px 7px;
-    }
-
-    .crewGroups.veryCompact .crewGroupTime {
-      font-size: 19px;
-    }
-
-    .crewGroups.veryCompact .crewGroupCount {
-      padding: 4px 7px;
-      font-size: 11px;
-    }
-
-    .crewGroups.veryCompact .crewPeopleGrid {
       gap: 5px;
-    }
-
-    .crewGroups.veryCompact .crewPerson {
-      min-height: 50px;
-      padding: 5px 7px;
-      gap: 2px 5px;
-      border-left-width: 7px;
-    }
-
-    .crewGroups.veryCompact .crewPersonName {
-      font-size: 20px;
-    }
-
-    .crewGroups.veryCompact .crewPositionBadge {
-      max-width: 135px;
-      padding: 3px 6px;
-      font-size: 10px;
-    }
-
-    .crewGroups.veryCompact .crewPersonShift {
-      font-size: 14px;
-    }
-
-    .crewGroups.veryCompact .crewPersonMeta {
-      font-size: 10px;
     }
 
     .crewTimeGroup {
       min-width: 0;
-      padding: 9px;
+      min-height: 82px;
+      padding: 7px;
       display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
+      grid-template-columns: 400px minmax(0, 1fr);
+      grid-template-rows: 1fr;
       gap: 8px;
+      align-items: stretch;
       border: 4px solid var(--ink);
-      border-radius: 15px;
+      border-radius: 14px;
       background: var(--white);
       box-shadow: 4px 4px 0 var(--ink);
       overflow: hidden;
     }
 
-    .crewTimeGroup.wide {
-      grid-column: span 2;
+    .crewGroups.compact .crewTimeGroup {
+      min-height: 74px;
+      padding: 6px;
+      grid-template-columns: 370px minmax(0, 1fr);
+      gap: 6px;
+    }
+
+    .crewGroups.veryCompact .crewTimeGroup {
+      min-height: 66px;
+      padding: 5px;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 5px;
     }
 
     .crewTimeGroup.group0 { background: #DDF3FF; }
@@ -699,48 +638,46 @@
 
     .crewGroupHeader {
       min-width: 0;
-      padding: 7px 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      padding: 8px 10px;
+      display: grid;
+      align-content: center;
+      justify-items: start;
+      gap: 7px;
       border: 3px solid var(--ink);
       border-radius: 10px;
-      background: rgba(255,255,255,.76);
+      background: rgba(255,255,255,.78);
+    }
+
+    .crewGroups.compact .crewGroupHeader {
+      padding: 6px 8px;
+      gap: 5px;
+    }
+
+    .crewGroups.veryCompact .crewGroupHeader {
+      padding: 5px 7px;
+      gap: 4px;
     }
 
     .crewGroupTime {
-      font-size: 25px;
+      font-size: 27px;
       line-height: 1;
       font-weight: 1000;
       white-space: nowrap;
     }
 
-    .crewPositionGroupLabel {
-      margin-top: 5px;
-      display: inline-block;
-      padding: 5px 8px;
-      border: 2px solid var(--ink);
-      border-radius: 999px;
-      background: var(--white);
-      font-size: 13px;
-      line-height: 1;
-      font-weight: 1000;
-      text-transform: uppercase;
+    .crewGroups.compact .crewGroupTime {
+      font-size: 25px;
     }
 
-    .crewPositionGroupLabel.light { background: #FDE68A; }
-    .crewPositionGroupLabel.video { background: #DDD6FE; }
-    .crewPositionGroupLabel.audio { background: #BFDBFE; }
-    .crewPositionGroupLabel.stage { background: #BBF7D0; }
-    .crewPositionGroupLabel.production { background: #FECACA; }
-    .crewPositionGroupLabel.general { background: #E2E8F0; }
+    .crewGroups.veryCompact .crewGroupTime {
+      font-size: 23px;
+    }
 
     .crewGroupCount {
       padding: 5px 8px;
       border: 2px solid var(--ink);
       border-radius: 999px;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1;
       font-weight: 1000;
       background: var(--white);
@@ -750,24 +687,56 @@
     .crewPeopleGrid {
       min-width: 0;
       display: grid;
-      grid-template-columns: repeat(var(--crew-person-columns, 1), minmax(0, 1fr));
-      gap: 7px;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-auto-rows: 68px;
+      gap: 6px;
       align-content: start;
+    }
+
+    .crewGroups.compact .crewPeopleGrid {
+      grid-auto-rows: 62px;
+      gap: 5px;
+    }
+
+    .crewGroups.veryCompact .crewPeopleGrid {
+      grid-auto-rows: 57px;
+      gap: 4px;
     }
 
     .crewPerson {
       min-width: 0;
-      min-height: 64px;
-      padding: 7px 9px;
+      width: 100%;
+      height: 68px;
+      min-height: 68px;
+      max-height: 68px;
+      padding: 6px 7px;
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
-      grid-template-rows: auto auto;
-      gap: 4px 7px;
+      grid-template-rows: auto auto auto;
+      gap: 4px 6px;
+      align-content: center;
       border: 3px solid var(--ink);
       border-left-width: 8px;
       border-radius: 10px;
-      background: rgba(255,255,255,.78);
+      background: rgba(255,255,255,.82);
       overflow: hidden;
+    }
+
+    .crewGroups.compact .crewPerson {
+      height: 62px;
+      min-height: 62px;
+      max-height: 62px;
+      padding: 5px 6px;
+      gap: 3px 5px;
+    }
+
+    .crewGroups.veryCompact .crewPerson {
+      height: 57px;
+      min-height: 57px;
+      max-height: 57px;
+      padding: 4px 5px;
+      gap: 2px 4px;
+      border-left-width: 7px;
     }
 
     .crewPerson.light { border-left-color: #F59E0B; }
@@ -779,19 +748,29 @@
 
     .crewPersonName {
       min-width: 0;
-      font-size: 25px;
+      font-size: 27px;
       line-height: 1;
       font-weight: 1000;
-      overflow-wrap: anywhere;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .crewGroups.compact .crewPersonName {
+      font-size: 25px;
+    }
+
+    .crewGroups.veryCompact .crewPersonName {
+      font-size: 23px;
     }
 
     .crewPositionBadge {
-      max-width: 160px;
+      max-width: 145px;
       padding: 4px 7px;
       border: 2px solid var(--ink);
       border-radius: 999px;
       background: var(--yellow);
-      font-size: 11px;
+      font-size: 13px;
       line-height: 1;
       font-weight: 1000;
       text-transform: uppercase;
@@ -800,22 +779,55 @@
       text-overflow: ellipsis;
     }
 
+    .crewGroups.compact .crewPositionBadge {
+      max-width: 130px;
+      font-size: 12px;
+    }
+
+    .crewGroups.veryCompact .crewPositionBadge {
+      max-width: 115px;
+      padding: 3px 6px;
+      font-size: 11px;
+    }
+
     .crewPersonShift {
       grid-column: 1 / -1;
+      min-width: 0;
       font-size: 18px;
       line-height: 1;
       font-weight: 1000;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .crewGroups.compact .crewPersonShift {
+      font-size: 18px;
+    }
+
+    .crewGroups.veryCompact .crewPersonShift {
+      font-size: 16px;
     }
 
     .crewPersonMeta {
       grid-column: 1 / -1;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3px 8px;
-      font-size: 12px;
+      min-width: 0;
+      display: block;
+      font-size: 11px;
       line-height: 1;
       font-weight: 800;
       color: rgba(8,8,8,.72);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .crewGroups.compact .crewPersonMeta {
+      font-size: 12px;
+    }
+
+    .crewGroups.veryCompact .crewPersonMeta {
+      font-size: 11px;
     }
 
     /* LOWER FOUR-COLUMN AREA */
@@ -894,14 +906,22 @@
 
     .inspectionGrid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 9px;
       align-content: start;
     }
 
+    .inspectionGrid.compact {
+      gap: 6px;
+    }
+
+    .inspectionCard.hideForSpace {
+      display: none;
+    }
+
     .inspectionCard {
       min-width: 0;
-      min-height: 100px;
+      min-height: 110px;
       padding: 10px 11px;
       display: grid;
       grid-template-rows: auto auto minmax(0, 1fr);
@@ -955,7 +975,7 @@
 
     .fixtureTitle {
       min-width: 0;
-      font-size: 22px;
+      font-size: 24px;
       line-height: 1;
       font-weight: 1000;
       overflow-wrap: anywhere;
@@ -968,7 +988,7 @@
       border: 2px solid var(--ink);
       border-radius: 999px;
       background: rgba(255,255,255,.72);
-      font-size: 11px;
+      font-size: 13px;
       line-height: 1;
       font-weight: 1000;
       text-align: center;
@@ -983,7 +1003,7 @@
     .inspectionNotes {
       padding-top: 5px;
       border-top: 2px solid rgba(8,8,8,.18);
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.08;
       font-weight: 800;
       overflow-wrap: anywhere;
@@ -994,7 +1014,7 @@
       gap: 4px;
       padding-top: 5px;
       border-top: 2px solid rgba(8,8,8,.18);
-      font-size: 11px;
+      font-size: 13px;
       line-height: 1.08;
       font-weight: 900;
       color: rgba(8,8,8,.72);
@@ -2633,7 +2653,10 @@
         video: 24,
         notes: 25,
         vlan: 26,
-        other: 27
+        other: 27,
+        ldName: 28,
+        techName: 29,
+        videoTech: 30
       };
 
       const selectedDay = normalize(OPERATIONS_DAY.day);
@@ -2777,6 +2800,27 @@
           "Other",
           row,
           C.other
+        );
+
+        addSelectedFact(
+          facts,
+          "LD name",
+          row,
+          C.ldName
+        );
+
+        addSelectedFact(
+          facts,
+          "TECH name",
+          row,
+          C.techName
+        );
+
+        addSelectedFact(
+          facts,
+          "Video tech",
+          row,
+          C.videoTech
         );
 
         bands.push({
@@ -3343,19 +3387,8 @@
       target.className = "fitContent crewGroups";
 
       target.innerHTML = groups.map(group => {
-        const peopleColumns =
-          group.people.length >= 9
-            ? 4
-            : group.people.length >= 5
-              ? 3
-              : group.people.length >= 3
-                ? 2
-                : 1;
-
-        const wide = group.people.length >= 5;
-
         return `
-          <section class="crewTimeGroup group${group.colourIndex} ${group.off ? "offGroup" : ""} ${wide ? "wide" : ""}">
+          <section class="crewTimeGroup group${group.colourIndex} ${group.off ? "offGroup" : ""}">
             <div class="crewGroupHeader">
               <div class="crewGroupTime">
                 ${group.off
@@ -3370,10 +3403,7 @@
               </div>
             </div>
 
-            <div
-              class="crewPeopleGrid"
-              style="--crew-person-columns:${peopleColumns}"
-            >
+            <div class="crewPeopleGrid">
               ${group.people.map(person => `
                 <article class="crewPerson ${escapeHtml(person.positionKey)}">
                   <div class="crewPersonName">
@@ -3837,12 +3867,15 @@
         return;
       }
 
-      target.className = "fitContent inspectionGrid";
+      target.className = "inspectionGrid";
       target.innerHTML = records.map(record => {
         const reported = [record.date, record.time].filter(Boolean).join(" · ");
 
         return `
-          <article class="inspectionCard ${escapeHtml(record.statusKey)}">
+          <article
+            class="inspectionCard ${escapeHtml(record.statusKey)}"
+            data-repaired="${record.statusKey === "repaired" ? "1" : "0"}"
+          >
             <div class="inspectionTop">
               <div class="fixtureTitle">${escapeHtml(record.fixtureId)}</div>
               <div class="inspectionStatus">${escapeHtml(record.statusLabel)}</div>
@@ -3866,9 +3899,67 @@
       hasLoaded.inspections = true;
       badge.textContent = `${records.length} listed`;
       badge.className = "footerBadge live";
-      requestAnimationFrame(() =>
-        fitInside("inspectionViewport", "inspectionContent")
+      requestAnimationFrame(fitBrokenList);
+    }
+
+    function fitBrokenList() {
+      const viewport = document.getElementById("inspectionViewport");
+      const content = document.getElementById("inspectionContent");
+
+      if (
+        !viewport ||
+        !content ||
+        !content.classList.contains("inspectionGrid")
+      ) {
+        return;
+      }
+
+      content.style.transform = "none";
+      content.style.width = "100%";
+      content.classList.remove("compact");
+
+      const cards = Array.from(
+        content.querySelectorAll(".inspectionCard")
       );
+
+      cards.forEach(card =>
+        card.classList.remove("hideForSpace")
+      );
+
+      const overflows = () =>
+        content.scrollHeight > viewport.clientHeight ||
+        content.scrollWidth > viewport.clientWidth;
+
+      if (overflows()) {
+        content.classList.add("compact");
+      }
+
+      const repairedCards = cards
+        .filter(card => card.dataset.repaired === "1")
+        .reverse();
+
+      while (overflows() && repairedCards.length) {
+        repairedCards.shift().classList.add("hideForSpace");
+      }
+
+      const remainingCards = cards
+        .filter(card => !card.classList.contains("hideForSpace"))
+        .reverse();
+
+      while (overflows() && remainingCards.length > 1) {
+        remainingCards.shift().classList.add("hideForSpace");
+      }
+
+      const hiddenCount = cards.filter(
+        card => card.classList.contains("hideForSpace")
+      ).length;
+
+      const shownCount = cards.length - hiddenCount;
+
+      document.getElementById("inspectionStatus").textContent =
+        hiddenCount
+          ? `${shownCount} shown · ${hiddenCount} hidden`
+          : `${shownCount} listed`;
     }
 
     async function loadInspections() {
@@ -3913,7 +4004,7 @@
           loadSheet({
             spreadsheetId: CONFIG.OPERATIONS_SPREADSHEET_ID,
             sheet: OPERATIONS_DAY.sheet,
-            range: "A1:AB350",
+            range: "A1:AE350",
             key: "bands"
           }),
           loadSheet({
@@ -4040,7 +4131,7 @@
       fitBandsSmart();
       fitCrewSmart();
       fitTodoWithoutShrinking();
-      fitInside("inspectionViewport", "inspectionContent");
+      fitBrokenList();
     });
 
     window.addEventListener("focus", () => {
