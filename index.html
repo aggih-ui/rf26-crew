@@ -1421,10 +1421,13 @@
       const entries = Object.entries(CONFIG.DAY_SHEETS);
 
       for (const [day, sheet] of entries) {
+        const normalizedDay = normalize(day);
+        const normalizedSheet = normalize(sheet);
+
         if (
-          requested === normalize(day) ||
-          requested === normalize(sheet) ||
-          normalize(sheet).startsWith(`${normalize(day)} `)
+          requested === normalizedDay ||
+          requested === normalizedSheet ||
+          requested.startsWith(`${normalizedDay} `)
         ) {
           return { day, sheet };
         }
@@ -2893,7 +2896,8 @@
 
     function renderBands(bands) {
       const target = document.getElementById("bandsContent");
-      document.getElementById("bandDayLabel").textContent = `${OPERATIONS_DAY.day} · ${formatFullDay(OPERATIONS_DAY.date)}`;
+      document.getElementById("bandDayLabel").textContent =
+        formatFullDay(OPERATIONS_DAY.date);
 
       if (!bands.length) {
         target.className = "emptyState";
@@ -3325,7 +3329,7 @@
       const target = document.getElementById("crewContent");
 
       document.getElementById("crewDayLabel").textContent =
-        `${OPERATIONS_DAY.day} · ${formatFullDay(OPERATIONS_DAY.date)}`;
+        formatFullDay(OPERATIONS_DAY.date);
 
       if (!crew.length) {
         target.className = "emptyState";
@@ -4122,7 +4126,8 @@
 
     function applyModeLabel() {
       if (OPERATIONS_DAY.preview) {
-        document.getElementById("modeText").textContent = `Selected day: ${OPERATIONS_DAY.day} ${formatFullDay(OPERATIONS_DAY.date)}`;
+        document.getElementById("modeText").textContent =
+          `Selected day: ${formatFullDay(OPERATIONS_DAY.date)} · ${OPERATIONS_DAY.sheet}`;
       }
     }
 
